@@ -1,0 +1,178 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --orange: #ff7800;
+    --black: #333;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --border: .1rem solid rgba(0,0,0,.1);
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase; 
+    text-decoration: none; /* Remove underline from logo */
+}
+
+header .logo span {
+    color: var(--orange);
+}
+
+header .navbar a {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0 0.8rem;
+    text-decoration: none; /* Remove underline */
+}
+
+header .navbar a:hover {
+    color: var(--orange);
+}
+
+header .icons i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+header .icons i:hover {
+    color: var(--orange);
+}
+
+header .icons .logout-icon i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .icons .logout-icon i:hover {
+    color: var(--orange);
+}
+
+/* User Profile Section */
+.user-profile {
+    padding: 2rem 5%;
+    margin-top: 7rem; /* Adjust to account for fixed header */
+}
+
+.user-profile h2 {
+    text-align: center;
+    color: var(--black);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.profile-section {
+    background: #f7f7f7;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.profile-section h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.profile-section label {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--black);
+    margin-bottom: .5rem;
+}
+
+.profile-section input[type="text"],
+.profile-section input[type="email"],
+.profile-section input[type="password"],
+.profile-section textarea {
+    width: 100%;
+    padding: .8rem;
+    font-size: 1.4rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.profile-section input[type="text"]:focus,
+.profile-section input[type="email"]:focus,
+.profile-section input[type="password"]:focus,
+.profile-section textarea:focus {
+    outline: none;
+    border-color: var(--orange);
+}
+
+.profile-section textarea {
+    height: 100px;
+    resize: none;
+}
+
+.profile-section .btn {
+    display: inline-block;
+    padding: .8rem 2rem;
+    background: var(--orange);
+    color: #fff;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.profile-section .btn:hover {
+    background: #ff8800;
+}
+
+/* Reviews Section */
+.profile-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-section ul li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.profile-section ul li strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.profile-section ul li hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 1rem 0;
+}

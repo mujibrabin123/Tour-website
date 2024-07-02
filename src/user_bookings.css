@@ -1,0 +1,129 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --orange: #ff7800;
+    --black: #333;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --border: .1rem solid rgba(0,0,0,.1);
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase; 
+    text-decoration: none; /* Remove underline from logo */
+}
+
+header .logo span {
+    color: var(--orange);
+}
+
+header .navbar a {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0 0.8rem;
+    text-decoration: none; /* Remove underline */
+}
+
+header .navbar a:hover {
+    color: var(--orange);
+}
+
+header .icons i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+header .icons i:hover {
+    color: var(--orange);
+}
+
+header .icons .logout-icon i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .icons .logout-icon i:hover {
+    color: var(--orange);
+}
+
+/* User Bookings Section */
+.user-bookings {
+    padding: 2rem 5%;
+    margin-top: 7rem; /* Adjust to account for fixed header */
+}
+
+.user-bookings h2 {
+    text-align: center;
+    color: var(--black);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.user-bookings ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-bookings ul li {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-bookings ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+.user-bookings ul li .booking-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.user-bookings ul li .booking-detail strong {
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.user-bookings ul li .booking-detail span {
+    font-size: 1.2rem;
+    color: var(--light-color);
+}
+
+.user-bookings ul li hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 1rem 0;
+}

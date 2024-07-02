@@ -1,0 +1,217 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --orange: #ff7800;
+    --black: #333;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --border: .1rem solid rgba(0,0,0,.1);
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+
+header .logo span {
+    color: var(--orange);
+}
+
+header .navbar a {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0 0.8rem;
+    text-decoration: none;
+}
+
+header .navbar a:hover {
+    color: var(--orange);
+}
+
+header .icons i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+header .icons i:hover {
+    color: var(--orange);
+}
+
+header .icons .logout-icon i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .icons .logout-icon i:hover {
+    color: var(--orange);
+}
+
+header .search-bar-container {
+    position: absolute;
+    top: 110%;
+    right: 5%;
+    width: 40rem;
+    height: 4rem;
+    background: #fff;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+header .search-bar-container.active {
+    display: flex;
+}
+
+header .search-bar-container input {
+    width: 100%;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    color: var(--black);
+}
+
+header .search-bar-container input:focus {
+    outline: none;
+}
+
+header .search-bar-container label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+/* Section Styles */
+section {
+    padding: 1.5rem 4%;
+    margin-top: 6rem; /* Adjust to account for fixed header */
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.heading span {
+    font-size: 3rem;
+    background: rgba(255, 120, 0, .2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 0.8rem;
+}
+
+.heading span.space {
+    background: none;
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    padding: 1.5rem 4%;
+}
+
+.admin-dashboard .heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--orange);
+}
+
+.admin-dashboard .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.admin-dashboard .box {
+    padding: 1.5rem;
+    background: #f7f7f7;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s;
+}
+
+.admin-dashboard .box:hover {
+    transform: scale(1.05);
+}
+
+.admin-dashboard .box h3 {
+    font-size: 1.8rem;
+    color: var(--black);
+    margin-bottom: 0.8rem;
+}
+
+.admin-dashboard .box p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+    margin-bottom: 0.5rem;
+}
+
+.user-box {
+    border-left: 4px solid var(--orange);
+}
+
+.booking-box {
+    border-left: 4px solid #ffab00;
+}
+
+.login-box {
+    border-left: 4px solid #00abff;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+button {
+    background: var(--orange);
+    border: none;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff8800;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+}
+
+input[type="search"]:focus {
+    outline: none;
+    border-color: var(--orange);
+}
