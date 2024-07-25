@@ -5,6 +5,7 @@ html, body {
     font-family: 'Nunito', sans-serif;
 }
 
+
 :root {
     --orange: #ff7800;
     --black: #333;
@@ -12,6 +13,8 @@ html, body {
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     --border: .1rem solid rgba(0,0,0,.1);
 }
+
+
 
 /* Header Styles */
 header {
@@ -75,6 +78,12 @@ header .icons .logout-icon i:hover {
 .user-profile {
     padding: 2rem 5%;
     margin-top: 7rem; /* Adjust to account for fixed header */
+}
+
+/* Selection Styles */
+::selection {
+    background: #ff7800; /* Deep orange background */
+    color: #fff; /* White text */
 }
 
 .user-profile h2 {
@@ -176,3 +185,5 @@ header .icons .logout-icon i:hover {
     background: #ccc;
     margin: 1rem 0;
 }
+
+

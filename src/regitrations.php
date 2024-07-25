@@ -7,22 +7,21 @@ require('db_connection.php');
 <head>
     <title>Registration Page</title>
     <link rel="stylesheet" type="text/css" href="registritionoff.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h1 class="heading">
-        <span>r</span>
-        <span>e</span>
-        <span>g</span>
-        <span>i</span>
-        <span>s</span>
-        <span>t</span>
-        <span>r</span>
-        <span>a</span>
-        <span>t</span>
-        <span>i</span>
-        <span>o</span>
-        <span>n</span>
+        <span>R</span>
+        <span>E</span>
+        <span>G</span>
+        <span>I</span>
+        <span>S</span>
+        <span>T</span>
+        <span>R</span>
+        <span>A</span>
+        <span>T</span>
+        <span>I</span>
+        <span>O</span>
+        <span>N</span>
         <div class="image">
             <img src="image/register-1.png" alt="">
         </div>

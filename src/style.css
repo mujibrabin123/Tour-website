@@ -106,8 +106,8 @@ header .icons i:hover{
 }
 
 header .search-bar-container {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: calc(50px + 5px);
     left: 0;
     right: 0;
     padding: 1.5rem 2rem;
@@ -128,18 +128,19 @@ header .search-bar-container #search-bar {
     padding: 1rem;
     font-size: 1.7rem;
     color: #fff;
-    border-radius: .5rem;
-    border: none; /* Remove border */
-    background: transparent; /* Transparent background */
-    border-bottom: .1rem solid rgba(255, 255, 255, 0.5); /* Add bottom border */
-    margin-right: 1rem; /* Add margin to separate from icon */
+    border-radius: 1rem;
+    border: none; 
+    background: transparent; 
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.5); 
+    margin-right: 1rem; 
 }
+
 
 
 header.search-bar-container label{
     color: #333;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 5rem;
     margin-left: 1.5rem;
 }
 header .search-bar-container label:hover{
@@ -190,7 +191,7 @@ header .search-bar-container label:hover{
 }
 
 .login-form-container .box:focus{
-    border-color: var(#444);;
+    border-color: var(#444);
 }
 
 .login-form-container form #remember{
@@ -207,7 +208,7 @@ header .search-bar-container label:hover{
 }
 
 .login-form-container form p{
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     font-size: 1.5rem;
     color: #666;
 }
@@ -221,9 +222,10 @@ header .search-bar-container label:hover{
     text-decoration: underline;
 }
 
-.login-form-container#form-close{
+.login-form-container #form-close{
     position: absolute;
-    top: rem; right: 3rem;
+    top: 1rem; 
+    right: 3rem;
     font-size: 5rem;
     color: #fff;
     cursor: pointer;

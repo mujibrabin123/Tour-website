@@ -52,7 +52,7 @@ $email = $_SESSION['email'];
     </div>
     <form action="" class="search-bar-container">
         <input type="search" id="search-bar" placeholder="Search here...">
-        <label for="search-bar" class="fas fa-search"></label>
+        <label for="search-bar" class="fas fa-times" id='search-close'></label>
     </form>
 </header>
 
@@ -609,7 +609,7 @@ $email = $_SESSION['email'];
 
 <!--custom js file link -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="script2.js"></script>
+<script src="script3.js"></script>
 
 </body>
 </html>

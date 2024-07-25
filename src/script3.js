@@ -3,26 +3,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let searchBtn = document.querySelector('#search-btn');
     let searchBar = document.querySelector('.search-bar-container');
+    let searchClose = document.querySelector('#search-close');
     let formBtn = document.querySelector('#login-btn');
     let loginForm = document.querySelector('.login-form-container');
-    let formclose = document.querySelector('.fas.fa-times'); 
+    let formClose = document.querySelector('#form-close');
     let menu = document.querySelector('#menu-bar');
     let navbar = document.querySelector('.navbar');
     let navbavideoBtns = document.querySelectorAll('.vid-btn');
 
+    // Log the elements to check if they are correctly selected
     console.log("Elements selected:", {
         searchBtn,
         searchBar,
+        searchClose,
         formBtn,
         loginForm,
-        formclose,
+        formClose,
         menu,
         navbar,
         navbavideoBtns
     });
 
     window.onscroll = () => {
-        console.log("Window scrolled");
         if (searchBtn) searchBtn.classList.remove('fa-times');
         if (searchBar) searchBar.classList.remove('active');
         if (menu) menu.classList.remove('fa-times');
@@ -31,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menu) {
         menu.addEventListener('click', () => {
-            console.log("Menu button clicked");
             menu.classList.toggle('fa-times');
             navbar.classList.toggle('active');
         });
@@ -39,28 +40,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (searchBtn) {
         searchBtn.addEventListener('click', () => {
-            console.log("Search button clicked");
             searchBtn.classList.toggle('fa-times');
             searchBar.classList.toggle('active');
         });
     }
 
-    if (formBtn && loginForm) {
-        formBtn.addEventListener('click', () => {
-            console.log("Form button clicked");
-            loginForm.classList.toggle('active');
+    if (searchClose) {
+        searchClose.addEventListener('click', () => {
+            searchBar.classList.remove('active');
         });
-    } else {
-        console.log("Form button or login form not found");
     }
 
-    if (formclose && loginForm) {
-        formclose.addEventListener('click', () => {
-            console.log("Form close button clicked");
+    if (formBtn && loginForm) {
+        formBtn.addEventListener('click', () => {
+            loginForm.classList.toggle('active');
+        });
+    }
+
+    if (formClose && loginForm) {
+        formClose.addEventListener('click', () => {
             loginForm.classList.remove('active');
         });
-    } else {
-        console.log("Form close button or login form not found");
     }
 
     if (navbavideoBtns.length > 0) {

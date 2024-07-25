@@ -71,6 +71,6 @@ $bookings = $stmt_bookings->get_result();
 </section>
 
 <!--custom js file link -->
-<script src="script2.js"></script>
+<script src="script3.js"></script>
 </body>
 </html>

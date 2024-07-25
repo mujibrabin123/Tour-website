@@ -111,5 +111,7 @@ document.getElementById('form-close').onclick = () => {
 };
 </script>
 
+<script src="script3.js"></script>
+
 </body>
 </html>

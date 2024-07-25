@@ -50,7 +50,7 @@ require('db_connection.php')
 
     <form action="" class="search-bar-container">
         <input type="search" id="search-bar" placeholder="search here...">
-        <label for="search-bar" class="fas fa-search"></label>
+        <label for="search-bar" class="fas fa-times" id="search-close"></label>
     </form>
 
    
@@ -64,7 +64,7 @@ require('db_connection.php')
 
 <div class="login-form-container">
 
-    <i class="fas fa-time" id="form-close"></i>
+    <i class="fas fa-times" id="form-close"></i>
     <form action="login.php" method="POST">
         <h3>login</h3>
         <input type="email" class="box" placeholder="enter your email" name="email"> <!-- Added name attribute -->
@@ -655,7 +655,7 @@ require('db_connection.php')
 
 
 <!--custom js file link -->
-<script src="script2.js"></script>
+<script src="script3.js"></script>
 
 </body>
 </html>
