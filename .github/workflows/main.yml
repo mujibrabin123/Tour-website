@@ -30,3 +30,4 @@ jobs:
           app-name: 'tour'
           slot-name: 'production'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile }}
+

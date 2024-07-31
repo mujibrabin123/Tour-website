@@ -1,0 +1,46 @@
+[
+  {
+    "SQLServerDBConnectionString": "REDACTED",
+    "controlPanelLink": "https://portal.azure.com",
+    "databases": null,
+    "destinationAppUrl": "https://tour-ewe8ehhdeec7eva9.italynorth-01.azurewebsites.net",
+    "hostingProviderForumLink": "",
+    "msdeploySite": "tour",
+    "mySQLDBConnectionString": "",
+    "profileName": "tour - Web Deploy",
+    "publishMethod": "MSDeploy",
+    "publishUrl": "tour-ewe8ehhdeec7eva9.scm.italynorth-01.azurewebsites.net:443",
+    "userName": "REDACTED",
+    "userPWD": "REDACTED",
+    "webSystem": "WebSites"
+  },
+  {
+    "SQLServerDBConnectionString": "",
+    "controlPanelLink": "https://portal.azure.com",
+    "databases": null,
+    "destinationAppUrl": "https://tour-ewe8ehhdeec7eva9.italynorth-01.azurewebsites.net",
+    "ftpPassiveMode": "True",
+    "hostingProviderForumLink": "",
+    "mySQLDBConnectionString": "",
+    "profileName": "tour - FTP",
+    "publishMethod": "FTP",
+    "publishUrl": "ftp://waws-prod-itn-005.ftp.azurewebsites.windows.net/site/wwwroot",
+    "userName": "tour\\$tour",
+    "userPWD": "rp2yfxuA9llMKcqhuqsLsvq7pjoj6L25EHiMLsMsPyyfHGnEsDpfl3YajwPB",
+    "webSystem": "WebSites"
+  },
+  {
+    "SQLServerDBConnectionString": "REDACTED",
+    "controlPanelLink": "https://portal.azure.com",
+    "databases": null,
+    "destinationAppUrl": "https://tour-ewe8ehhdeec7eva9.italynorth-01.azurewebsites.net",
+    "hostingProviderForumLink": "",
+    "mySQLDBConnectionString": "",
+    "profileName": "tour - Zip Deploy",
+    "publishMethod": "ZipDeploy",
+    "publishUrl": "tour-ewe8ehhdeec7eva9.scm.italynorth-01.azurewebsites.net:443",
+    "userName": "REDACTED",
+    "userPWD": "REDACTED",
+    "webSystem": "WebSites"
+  }
+]
